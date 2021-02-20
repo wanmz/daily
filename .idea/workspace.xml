@@ -2,110 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37abc865-7c42-4bbd-a26e-09e0f59bd946" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/python100/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python2/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/001.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/002.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/003.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/004.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/005.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/006.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/007.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/008.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/009.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/010.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/011.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/012.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/013.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/014.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/015.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/016.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/017.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/018.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/019.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/020.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/021.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/022.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/023.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/024.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/025.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/026.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/027.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/028.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/029.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/030.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/031.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/032.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/033.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/034.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/035.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/036.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/037.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/038.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/039.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/040.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/041.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/042.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/043.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/044.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/045.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/046.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/047.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/048.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/049.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/050.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/051.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/052.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/053.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/054.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/055.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/056.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/057.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/058.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/059.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/060.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/061.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/062.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/063.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/064.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/065.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/066.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/067.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/068.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/069.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/070.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/071.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/072.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/073.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/074.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/075.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/076.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/077.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/078.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/079.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/080.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/081.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/082.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/083.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/084.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/085.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/086.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/087.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/088.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/089.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/090.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/091.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/092.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/093.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/094.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/095.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/096.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/097.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/098.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/099.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/100.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100/python3/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/simple/Roman_to_Integer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -128,6 +26,7 @@
     <SUITE FILE_PATH="coverage/daily$eg3__1_.coverage" NAME="eg3 (1) Coverage Results" MODIFIED="1613819909514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python100/python3" />
     <SUITE FILE_PATH="coverage/daily$eg5.coverage" NAME="eg5 Coverage Results" MODIFIED="1613820004749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python100/python3" />
     <SUITE FILE_PATH="coverage/daily$eg3.coverage" NAME="eg3 Coverage Results" MODIFIED="1613819785072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python3-100" />
+    <SUITE FILE_PATH="coverage/daily$Roman_to_Integer.coverage" NAME="Roman_to_Integer Coverage Results" MODIFIED="1613822513569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/simple" />
     <SUITE FILE_PATH="coverage/daily$Reverse_Integer.coverage" NAME="Reverse_Integer Coverage Results" MODIFIED="1613692057504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/simple" />
   </component>
   <component name="FileEditorManager">
@@ -138,8 +37,44 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/simple/twoSum.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data-analysis/simple/zhexiantu.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="82" column="10" lean-forward="true" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/leetcode/simple/Roman_to_Integer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python100/python3/003.py">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/simple/Reverse_Integer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="20" selection-end-column="21" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -147,11 +82,20 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python100/python3/006.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
               <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/simple/Palindrome_Number.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -173,7 +117,6 @@
       <list>
         <option value="$PROJECT_DIR$/leetcode/simple/twoSum.py" />
         <option value="$PROJECT_DIR$/stock/common/my.py" />
-        <option value="$PROJECT_DIR$/leetcode/simple/Reverse_Integer.py" />
         <option value="$PROJECT_DIR$/stock/common/my3.py" />
         <option value="$PROJECT_DIR$/data-analysis/simple/simple_bar.py" />
         <option value="$PROJECT_DIR$/leetcode/simple/Palindrome_Number.py" />
@@ -187,6 +130,9 @@
         <option value="$PROJECT_DIR$/python100/python3/eg4.py" />
         <option value="$PROJECT_DIR$/python100/python3/eg5.py" />
         <option value="$PROJECT_DIR$/python100/python3/eg6.py" />
+        <option value="$PROJECT_DIR$/leetcode/Roman_to_Integer.py" />
+        <option value="$PROJECT_DIR$/leetcode/simple/Reverse_Integer.py" />
+        <option value="$PROJECT_DIR$/leetcode/simple/Roman_to_Integer.py" />
       </list>
     </option>
   </component>
@@ -215,13 +161,24 @@
             <path>
               <item name="daily" type="b2602c69:ProjectViewProjectNode" />
               <item name="daily" type="462c0819:PsiDirectoryNode" />
-              <item name="python100" type="462c0819:PsiDirectoryNode" />
+              <item name="data-analysis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="daily" type="b2602c69:ProjectViewProjectNode" />
               <item name="daily" type="462c0819:PsiDirectoryNode" />
-              <item name="python100" type="462c0819:PsiDirectoryNode" />
-              <item name="python3" type="462c0819:PsiDirectoryNode" />
+              <item name="data-analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="daily" type="b2602c69:ProjectViewProjectNode" />
+              <item name="daily" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="daily" type="b2602c69:ProjectViewProjectNode" />
+              <item name="daily" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -241,6 +198,7 @@
       <recent name="E:\wkSpace\workspace_python\daily\python100\python3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\wkSpace\workspace_python\daily\leetcode\simple" />
       <recent name="E:\wkSpace\workspace_python\daily\python100\python3" />
     </key>
   </component>
@@ -256,7 +214,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.eg6">
+  <component name="RunManager" selected="Python.Roman_to_Integer">
+    <configuration name="Roman_to_Integer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="daily" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/simple" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/simple/Roman_to_Integer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="eg3 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="daily" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -271,28 +251,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python100/python3/eg3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="eg3" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="daily" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python3-100" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python3-100/eg3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -369,11 +327,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Roman_to_Integer" />
         <item itemvalue="Python.eg6" />
         <item itemvalue="Python.eg5" />
         <item itemvalue="Python.eg4" />
         <item itemvalue="Python.eg3 (1)" />
-        <item itemvalue="Python.eg3" />
       </list>
     </recent_temporary>
   </component>
@@ -391,22 +349,23 @@
       <workItem from="1613647079026" duration="2470000" />
       <workItem from="1613691256692" duration="3808000" />
       <workItem from="1613738259962" duration="2011000" />
-      <workItem from="1613818744964" duration="2759000" />
+      <workItem from="1613818744964" duration="6060000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11715000" />
+    <option name="totallyTimeSpent" value="15016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26340482" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -415,7 +374,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -451,20 +410,6 @@
     <entry file="file://$PROJECT_DIR$/leetcode/simple/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/simple/twoSum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/simple/Reverse_Integer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="4" selection-start-line="8" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stock/common/my3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -476,13 +421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/simple/Palindrome_Number.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -514,13 +452,6 @@
           <folding>
             <element signature="e#290#321#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data-analysis/simple/zhexiantu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="82" column="10" lean-forward="true" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -602,6 +533,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/simple/Palindrome_Number.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/simple/twoSum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data-analysis/simple/zhexiantu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="82" column="10" lean-forward="true" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/simple/Reverse_Integer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/simple/Roman_to_Integer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
