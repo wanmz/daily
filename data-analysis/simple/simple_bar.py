@@ -17,5 +17,5 @@ buy_number = [6, 7, 6, 1, 2]
 plt.bar(waters, buy_number)
 plt.title('男性购买饮用水情况的调查结果')
 
-plt.savefig("男性购买饮用水情况的调查结果.jpg")
+# plt.savefig("男性购买饮用水情况的调查结果.jpg")
 plt.show()
