@@ -46,3 +46,43 @@ ax.legend(labels=labels)
 
 plt.show()
 
+
+'''同时绘制四个饼图
+labels = 'Frogs', 'Hogs', 'Dogs', 'Logs'
+fracs = [15, 30, 45, 10]
+
+# 创建四个饼图型
+fig, axs = plt.subplots(2, 2)
+
+# 第一个饼图设置
+axs[0, 0].pie(fracs, labels=labels, autopct='%1.1f%%', shadow=True)
+
+# 第二个饼图设置，设置第二个扇形偏移
+axs[0, 1].pie(fracs, labels=labels, autopct='%.0f%%', shadow=True,
+              explode=(0, 0.1, 0, 0))
+
+# 第三个饼图设置，设置更小半径及图例大小
+patches, texts, autotexts = axs[1, 0].pie(fracs, labels=labels,
+                                          autopct='%.0f%%',
+                                          textprops={'size': 'smaller'},
+                                          shadow=True, radius=0.5)
+# 第三个饼图设置，设置百分比图例大小参数
+plt.setp(autotexts, size='x-small')
+# 第一个扇形百分比值颜色设置
+autotexts[0].set_color('white')
+
+# 第四个饼图设置，设置更小半径及图例大小，第二个扇形偏移
+patches, texts, autotexts = axs[1, 1].pie(fracs, labels=labels,
+                                          autopct='%.0f%%',
+                                          textprops={'size': 'smaller'},
+                                          shadow=False, radius=0.5,
+                                          explode=(0, 0.05, 0, 0))
+# 对饼图设置属性值，设置扇形值大小
+plt.setp(autotexts, size='x-small')
+
+# 对饼图设置属性值，第一个扇形值设置为白色
+autotexts[0].set_color('white')
+
+plt.show()
+'''
+
