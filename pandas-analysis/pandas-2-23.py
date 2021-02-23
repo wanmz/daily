@@ -12,9 +12,9 @@
 import numpy as np
 import pandas as pd
 
-path = "C:/Users/Administrator/Downloads/2021年员工春节礼品邮寄地址收集-云服务业务部.xls"
+# path = "C:/Users/Administrator/Downloads/2021年员工春节礼品邮寄地址收集-云服务业务部.xls"
 
-df = pd.read_excel(path)
+# df = pd.read_excel(path)
 
 # 获取某列最大值
 # print(df['员工编码'].max())
@@ -101,4 +101,39 @@ df = pd.read_excel(path)
 
 """删除缺省值"""
 # subset和thresh参数来删除你需要删除的缺失值，inplace则表示是否在原表上替代
-print(df.dropna(axis=0, subset=["收件省"]))
+# print(df.dropna(axis=0, subset=["收件省"]))
+
+filepath = r'F:\analysis-study-data\eg1.xls'
+df = pd.read_excel(filepath)
+# 某列求平均值
+# print(df["数量"].mean())
+# 利用某列均值来对NA值进行填充
+# print(df["数量"].fillna(df["数量"].mean()))
+# 利用某列中位数来对NA值进行填充
+# print(df["数量"].fillna(df["数量"].median()))
+
+"""重复值处理"""
+# duplicated找出重复值,不加subset默认所有列,keep=first 第一次重复列标记为True
+# print(df.duplicated(subset=["效期"], keep='first'))
+# 除了最后出现的情况外，将重复项标记为True。
+# print(df.duplicated(subset=["效期"], keep='last'))
+
+# 删除"效期"列存在重复的行数据。
+# print(df.drop_duplicates(subset=["效期"], keep='first', inplace=False))
+
+# drop 删除多余行或列
+
+"""数据变换"""
+# 由于“累计评价”的值太大，我们新增一列对“累计评价”取对数处理
+# data['对数_累计评价']=np.sqrt(data['累计评价'])
+
+#插入一列，计算“优惠力度”
+# data['优惠力度']=data1['现价']/data1['原价']
+
+"""数据精简"""
+#随机不重复抽取100行数据样本
+# data.sample(n=100)
+
+# 分组求和
+# data.groupby(by='店铺名称')['月销量'].sum()
+
