@@ -1,5 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/daily$shuxiantu.coverage" NAME="shuxiantu Coverage Results" MODIFIED="1614003613899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data-analysis/simple" />
+    <SUITE FILE_PATH="coverage/daily$pandas_2_26.coverage" NAME="pandas-2-26 Coverage Results" MODIFIED="1614395329236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis" />
+    <SUITE FILE_PATH="coverage/daily$twoSum.coverage" NAME="twoSum Coverage Results" MODIFIED="1613648015678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/simple" />
+    <SUITE FILE_PATH="coverage/daily$pandas_2_25_1.coverage" NAME="pandas-2-25-1 Coverage Results" MODIFIED="1614267260590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis" />
+    <SUITE FILE_PATH="coverage/daily$zhexiantu.coverage" NAME="zhexiantu Coverage Results" MODIFIED="1613818910242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data-analysis/simple" />
+    <SUITE FILE_PATH="coverage/daily$yiqing_hainan2.coverage" NAME="yiqing-hainan2 Coverage Results" MODIFIED="1614272101428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis/yiqing-my" />
+    <SUITE FILE_PATH="coverage/daily$eg6.coverage" NAME="eg6 Coverage Results" MODIFIED="1613820067480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python100/python3" />
+    <SUITE FILE_PATH="coverage/daily$app.coverage" NAME="app Coverage Results" MODIFIED="1613876687951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project/big_screen-master" />
+    <SUITE FILE_PATH="coverage/daily$yiqing_cloude.coverage" NAME="yiqing-cloude Coverage Results" MODIFIED="1614268652289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis/yiqing-my" />
+    <SUITE FILE_PATH="coverage/daily$eg2.coverage" NAME="eg2 Coverage Results" MODIFIED="1613819731028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python3-100" />
+    <SUITE FILE_PATH="coverage/daily$longstrComonPrefix.coverage" NAME="longstrComonPrefix Coverage Results" MODIFIED="1614085305633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/simple" />
+    <SUITE FILE_PATH="coverage/daily$yiqing_guagndong.coverage" NAME="yiqing-guagndong Coverage Results" MODIFIED="1614272159949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis/yiqing-my" />
+    <SUITE FILE_PATH="coverage/daily$Longest_Common_Prefix.coverage" NAME="Longest_Common_Prefix Coverage Results" MODIFIED="1613998517138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data-analysis/simple" />
+    <SUITE FILE_PATH="coverage/daily$yiqing_world.coverage" NAME="yiqing-world Coverage Results" MODIFIED="1614269740272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis/yiqing-my" />
+    <SUITE FILE_PATH="coverage/daily$my3.coverage" NAME="my3 Coverage Results" MODIFIED="1613693162057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock/common" />
+    <SUITE FILE_PATH="coverage/daily$Palindrome_Number.coverage" NAME="Palindrome_Number Coverage Results" MODIFIED="1613738496896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/simple" />
+    <SUITE FILE_PATH="coverage/daily$Roman_to_Integer.coverage" NAME="Roman_to_Integer Coverage Results" MODIFIED="1613822513569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/simple" />
+    <SUITE FILE_PATH="coverage/daily$Remove_Duplicates_from_Sorted_Array.coverage" NAME="Remove_Duplicates_from_Sorted_Array Coverage Results" MODIFIED="1614254629582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/simple" />
+    <SUITE FILE_PATH="coverage/daily$yiqing_hot.coverage" NAME="yiqing-hot Coverage Results" MODIFIED="1614269735358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis/yiqing-my" />
+    <SUITE FILE_PATH="coverage/daily$yq_word.coverage" NAME="yq-word Coverage Results" MODIFIED="1614258736390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis" />
+    <SUITE FILE_PATH="coverage/daily$Reverse_Integer.coverage" NAME="Reverse_Integer Coverage Results" MODIFIED="1613692057504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/simple" />
+    <SUITE FILE_PATH="coverage/daily$eg4.coverage" NAME="eg4 Coverage Results" MODIFIED="1613819936536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python100/python3" />
+    <SUITE FILE_PATH="coverage/daily$yiqing_hainan.coverage" NAME="yiqing-hainan Coverage Results" MODIFIED="1614270686417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis/yiqing-my" />
+    <SUITE FILE_PATH="coverage/daily$yq_rose.coverage" NAME="yq-rose Coverage Results" MODIFIED="1614256396961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis" />
+    <SUITE FILE_PATH="coverage/daily$pandas_2_22.coverage" NAME="pandas-2-22 Coverage Results" MODIFIED="1614004487889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis" />
+    <SUITE FILE_PATH="coverage/daily$eg1.coverage" NAME="eg1 Coverage Results" MODIFIED="1613819663684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python3-100" />
+    <SUITE FILE_PATH="coverage/daily$Valid_Parentheses.coverage" NAME="Valid_Parentheses Coverage Results" MODIFIED="1614172881719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/simple" />
+    <SUITE FILE_PATH="coverage/daily$pandas_2_25.coverage" NAME="pandas-2-25 Coverage Results" MODIFIED="1614266658856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis" />
+    <SUITE FILE_PATH="coverage/daily$simple_bar.coverage" NAME="simple_bar Coverage Results" MODIFIED="1614003609683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data-analysis/simple" />
+    <SUITE FILE_PATH="coverage/daily$yiqing_cloud.coverage" NAME="yiqing-cloud Coverage Results" MODIFIED="1614269729358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis/yiqing-my" />
+    <SUITE FILE_PATH="coverage/daily$get_boss_job_data.coverage" NAME="get_boss_job_data Coverage Results" MODIFIED="1614093177582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data-analysis/boss_job" />
+    <SUITE FILE_PATH="coverage/daily$bingtu.coverage" NAME="bingtu Coverage Results" MODIFIED="1613916919765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data-analysis/simple" />
+    <SUITE FILE_PATH="coverage/daily$eg3__1_.coverage" NAME="eg3 (1) Coverage Results" MODIFIED="1613819909514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python100/python3" />
+    <SUITE FILE_PATH="coverage/daily$eg5.coverage" NAME="eg5 Coverage Results" MODIFIED="1613820004749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python100/python3" />
+    <SUITE FILE_PATH="coverage/daily$eg3.coverage" NAME="eg3 Coverage Results" MODIFIED="1613819785072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python3-100" />
+    <SUITE FILE_PATH="coverage/daily$yq_hb.coverage" NAME="yq-hb Coverage Results" MODIFIED="1614264766403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis" />
+    <SUITE FILE_PATH="coverage/daily$pandas_2_24_1.coverage" NAME="pandas-2-24-1 Coverage Results" MODIFIED="1614182310384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis" />
+    <SUITE FILE_PATH="coverage/daily$pandas_2_23.coverage" NAME="pandas-2-23 Coverage Results" MODIFIED="1614086864423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis" />
+    <SUITE FILE_PATH="coverage/daily$yiqing_china.coverage" NAME="yiqing-china Coverage Results" MODIFIED="1614269829439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis/yiqing-my" />
+    <SUITE FILE_PATH="coverage/daily$yiqing_line.coverage" NAME="yiqing-line Coverage Results" MODIFIED="1614269737029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis/yiqing-my" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-450" />
     <option name="y" value="35" />
@@ -11,5 +53,126 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunManager" selected="Python.pandas-2-26">
+    <configuration name="pandas-2-26" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="daily" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pandas-analysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pandas-analysis/pandas-2-26.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="yiqing-china" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="daily" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pandas-analysis/yiqing-my" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pandas-analysis/yiqing-my/yiqing-china.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="yiqing-guagndong" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="daily" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pandas-analysis/yiqing-my" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pandas-analysis/yiqing-my/yiqing-guagndong.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="yiqing-hainan" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="daily" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pandas-analysis/yiqing-my" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pandas-analysis/yiqing-my/yiqing-hainan.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="yiqing-hainan2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="daily" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pandas-analysis/yiqing-my" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\wkSpace\workspace_python\daily\pandas-analysis\yiqing-my\yiqing-guagndong.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.pandas-2-26" />
+        <item itemvalue="Python.yiqing-guagndong" />
+        <item itemvalue="Python.yiqing-hainan2" />
+        <item itemvalue="Python.yiqing-hainan" />
+        <item itemvalue="Python.yiqing-china" />
+      </list>
+    </recent_temporary>
   </component>
 </project>
