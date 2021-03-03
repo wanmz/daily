@@ -6,7 +6,7 @@
 # @Email    :wmzhong_01@163.com
 # @Bolg     :https://home.cnblogs.com/wmzhong
 # @jianshu  :https://www.jianshu.com/u/2ef83f0891c7
-# @Description:
+# @Description:实现20年编程语言排名滚动图排名
 # @公众号    :Python与数据分析之美
 -------------------------------------------------
 """
