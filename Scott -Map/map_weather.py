@@ -10,9 +10,7 @@
 # @公众号    :Python与数据分析之美
 -------------------------------------------------
 """
-import json
 import requests
-from urllib import parse
 
 
 class District(object):
