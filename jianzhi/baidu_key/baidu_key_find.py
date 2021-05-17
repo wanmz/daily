@@ -55,9 +55,6 @@ UA = ['Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.55.3 (KHTML, like Gecko) Ver
       'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0.1) Gecko/20100101 Firefox/4.0.1',
       'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0)',
 
-      'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) \
-      Chrome/20.0.1132.11 TaoBrowser/2.0 Safari/536.11',
-
       'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) \
       Chrome/21.0.1180.71 Safari/537.1 LBBROWSER',
 
@@ -111,14 +108,14 @@ class GUI:
         res_data = []
         password = self.t_password.get()
         # 判空操作：略
-        print(password)
-        res_data.append(['标题', '网址', '邮箱', '网站可达性'])
+        print("关键词 " + password)
+        res_data.append(['标题', '网址', '邮箱'])
         # page = 1
         if len(password) < 1:
             tk.messagebox.showerror('Error', "请输入关键词")
             exit(0)
         keyword = parse.quote(password)
-        for page in range(0, 2):
+        for page in range(0, 1):
             # 增加重连次数
             requests.adapters.DEFAULT_RETRIES = 5
             # 关闭多余连接
@@ -151,6 +148,7 @@ class GUI:
                     print("[%s]网站不可达, 跳过" % line_url)
                     continue
                 res.encoding = 'utf8'
+                # print(line_url)
                 # print(res.text)
                 # 正则表达式匹配邮箱
                 try:
@@ -158,7 +156,7 @@ class GUI:
                 except:
                     continue
                 # print(mail)
-                res_data.append([title, line_url, ','.join(mail), "正常" if res.status_code == 200 else "不可达"])
+                res_data.append([title, line_url, ','.join(mail)])
                 print("获取第%s数据完成！！！" % cnt)
                 cnt += 1
             # print(res_data)
