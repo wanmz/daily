@@ -164,10 +164,18 @@ class GUI:
                 try:
                     # 正则表达式匹配邮箱
                     # mail = re.findall(r'[a-z_\-\.0-9]+@[a-z\-\.]+', res.text, re.DOTALL)
-                    mail = re.findall(r'[a-z_\-\.0-9]+@[a-z0-9]+\.[a-z0-9]+', res.text, re.DOTALL)
+                    mail = re.findall(r'[a-z_\-\.0-9]+@[a-z0-9]+\.[com,cn,net]{1,3}', res.text, re.DOTALL)
                     if len(mail) < 1:
                         # 正则表达式匹配座机
+                        tel = []
                         mail = re.findall(r'[0][0-9]{2,3}-[0-9]{5,10}[\-0-9]{0,5}', res.text)
+                        if len(mail) > 0:
+                            for i in mail:
+                                if len(i.split('-')[1].strip()) > 8:
+                                    continue
+                                else:
+                                    tel.append(i)
+                            mail = tel
                 except:
                     continue
                 # print(mail)
