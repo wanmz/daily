@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b9fde64-71fb-4a22-ac41-121d98390554" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jianzhi/sina_comment/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/sina_comment/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/sina_comment/comment_nlp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/sina_comment/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/sina_comment/common/collect_ip.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/sina_comment/common/pgutils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/sina_comment/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/sina_comment/db_init/sina.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/sina_comment/logging.conf.template" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/sina_comment/sentiment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/sina_comment/settings.conf.template" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/sina_comment/static/heart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/sina_comment/static/simhei.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/sina_comment/task_sina.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/sina_comment/weibo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/sina_comment/微博评论词云图.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/weibo/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/weibo/collect_ip.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianzhi/weibo/weibo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/baidu_key_find.py" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/baidu_key_find.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/Analysis-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/EXE-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/PKG-00.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/PKG-00.pkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/PKG-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/PYZ-00.pyz" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/PYZ-00.pyz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/PYZ-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/PYZ-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/warn-baidu_key_find.txt" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/warn-baidu_key_find.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/dist/baidu_key_find.exe" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/dist/baidu_key_find.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jianzhi/weibo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/weibo/__init__.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jianzhi/weibo/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+            <state relative-caret-position="348">
+              <caret line="19" column="91" selection-start-line="19" selection-start-column="91" selection-end-line="19" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -375,18 +347,18 @@
       <updated>1621301959505</updated>
       <workItem from="1621301960809" duration="2548000" />
       <workItem from="1621310112809" duration="2751000" />
-      <workItem from="1621342389482" duration="9020000" />
+      <workItem from="1621342389482" duration="9114000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14319000" />
+    <option name="totallyTimeSpent" value="14413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25603217" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25603217" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -400,7 +372,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -571,8 +543,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jianzhi/weibo/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="348">
+          <caret line="19" column="91" selection-start-line="19" selection-start-column="91" selection-end-line="19" selection-end-column="91" />
         </state>
       </provider>
     </entry>
