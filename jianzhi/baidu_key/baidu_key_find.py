@@ -144,7 +144,13 @@ class GUI:
                     s = requests.session()
                     # 关闭多余连接
                     s.keep_alive = False
-                    # print(res.status_code)
+
+                    # 处理网址重定向问题
+                    print(res.url)
+                    if res.url != line_url:
+                        print("网址发生重定向")
+                        line_url = res.url
+                        res = requests.get(line_url, headers={'User-Agent': UA[random.randint(0, len(UA) - 1)]})
                 except requests.exceptions.ConnectionError:
                     res.status_code = "Connection refused"
                 if res.status_code != 200:
@@ -155,7 +161,8 @@ class GUI:
                 # print(res.text)
                 # 正则表达式匹配邮箱
                 try:
-                    mail = re.findall(r'[a-z_\-\.0-9]+@[a-z\-\.0-9]+', res.text, re.DOTALL)
+                    # mail = re.findall(r'[a-z_\-\.0-9]+@[a-z\-\.]+', res.text, re.DOTALL)
+                    mail = re.findall(r'[a-z_\-\.0-9]+@[a-z]+\.[a-z0-9]+', res.text, re.DOTALL)
                 except:
                     continue
                 # print(mail)
