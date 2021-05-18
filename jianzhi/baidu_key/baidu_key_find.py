@@ -6,6 +6,8 @@
 # @Email    :wmzhong_01@163.com
 # @Description:
   通过百度搜索关键词拿下来连接去访问网站获取下方邮箱。
+  update: 1.加入座机和QQ信息获取
+          2.加入可视化界面
 -------------------------------------------------
 """
 import re
@@ -146,9 +148,9 @@ class GUI:
                     s.keep_alive = False
 
                     # 处理网址重定向问题
-                    print(res.url)
+                    # print(res.url)
                     if res.url != line_url:
-                        print("网址发生重定向")
+                        # print("网址发生重定向")
                         line_url = res.url
                         res = requests.get(line_url, headers={'User-Agent': UA[random.randint(0, len(UA) - 1)]})
                 except requests.exceptions.ConnectionError:
@@ -159,14 +161,17 @@ class GUI:
                 res.encoding = 'utf8'
                 # print(line_url)
                 # print(res.text)
-                # 正则表达式匹配邮箱
                 try:
+                    # 正则表达式匹配邮箱
                     # mail = re.findall(r'[a-z_\-\.0-9]+@[a-z\-\.]+', res.text, re.DOTALL)
-                    mail = re.findall(r'[a-z_\-\.0-9]+@[a-z]+\.[a-z0-9]+', res.text, re.DOTALL)
+                    mail = re.findall(r'[a-z_\-\.0-9]+@[a-z0-9]+\.[a-z0-9]+', res.text, re.DOTALL)
+                    if len(mail) < 1:
+                        # 正则表达式匹配座机
+                        mail = re.findall(r'[0][0-9]{2,3}-[0-9]{5,10}[\-0-9]{0,5}', res.text)
                 except:
                     continue
                 # print(mail)
-                res_data.append([title, line_url, ','.join(mail)])
+                res_data.append([title, line_url, ','.join(set(mail))])
                 print("获取第%s数据完成！！！" % cnt)
                 cnt += 1
             # print(res_data)
