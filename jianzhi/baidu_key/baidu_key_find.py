@@ -102,6 +102,10 @@ class GUI:
         tk.Label(self.face, text='关键词').pack()
         self.t_password = tk.Entry(self.face, )
         self.t_password.pack()
+
+        tk.Label(self.face, text='条数(*10)').pack()
+        self.t_num = tk.Entry(self.face, )
+        self.t_num.pack()
         btn_login = tk.Button(self.face, text='开始搜索', command=self.login)
         btn_login.pack()
 
@@ -109,15 +113,16 @@ class GUI:
         cnt = 1
         res_data = []
         password = self.t_password.get()
+        num = self.t_num.get()
         # 判空操作：略
-        print("关键词 " + password)
+        print("关键词 " + password + ", 条数 " + str(int(num)*10))
         res_data.append(['标题', '网址', '邮箱'])
         # page = 1
-        if len(password) < 1:
+        if len(password) < 1 or len(num) < 1:
             tk.messagebox.showerror('Error', "请输入关键词")
             exit(0)
         keyword = parse.quote(password)
-        for page in range(0, 1):
+        for page in range(0, int(num)):
             # 增加重连次数
             requests.adapters.DEFAULT_RETRIES = 5
             # 关闭多余连接
