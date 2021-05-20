@@ -106,32 +106,16 @@ class GUI:
         tk.Label(self.face, text='条数(*10)').pack()
         self.t_num = tk.Entry(self.face, )
         self.t_num.pack()
-
-        self.var1 = tk.IntVar()
-        self.var2 = tk.IntVar()
-        c1 = tk.Checkbutton(self.face, text='邮箱', variable=self.var1, onvalue=1, offvalue=0)
-        c1.pack()
-        c2 = tk.Checkbutton(self.face, text='座机号', variable=self.var2, onvalue=1, offvalue=0)
-        c2.pack()
-
         btn_login = tk.Button(self.face, text='开始搜索', command=self.login)
         btn_login.pack()
 
     def login(self):
         cnt = 1
-        words = str()
         res_data = []
         password = self.t_password.get()
         num = self.t_num.get()
-
-        # print(self.var1.get(), self.var2.get())
-        if self.var1.get() == 1:
-            words = "邮箱"
-        if self.var2.get() == 1:
-            words = "座机号"
-
         # 判空操作：略
-        print("关键词: %s, 条数: %s, 选择项: %s" % (password, str(int(num)*10), words))
+        print("关键词 " + password + ", 条数 " + str(int(num)*10))
         res_data.append(['标题', '网址', '邮箱'])
         # page = 1
         if len(password) < 1 or len(num) < 1:
@@ -185,22 +169,8 @@ class GUI:
                 try:
                     # 正则表达式匹配邮箱
                     # mail = re.findall(r'[a-z_\-\.0-9]+@[a-z\-\.]+', res.text, re.DOTALL)
-                    if len(words) < 1:
-                        mail = re.findall(r'[a-z_\-\.0-9]+@[a-z0-9]+\.[com,cn,net]{1,3}', res.text, re.DOTALL)
-                        if len(mail) < 1:
-                            # 正则表达式匹配座机
-                            tel = []
-                            mail = re.findall(r'[0][0-9]{2,3}-[0-9]{5,10}[\-0-9]{0,5}', res.text)
-                            if len(mail) > 0:
-                                for i in mail:
-                                    if len(i.split('-')[1].strip()) > 8:
-                                        continue
-                                    else:
-                                        tel.append(i)
-                                mail = tel
-                    if words == "邮箱":
-                        mail = re.findall(r'[a-z_\-\.0-9]+@[a-z0-9]+\.[com,cn,net]{1,3}', res.text, re.DOTALL)
-                    if words == "座机号":
+                    mail = re.findall(r'[a-z_\-\.0-9]+@[a-z0-9]+\.[com,cn,net]{1,3}', res.text, re.DOTALL)
+                    if len(mail) < 1:
                         # 正则表达式匹配座机
                         tel = []
                         mail = re.findall(r'[0][0-9]{2,3}-[0-9]{5,10}[\-0-9]{0,5}', res.text)
