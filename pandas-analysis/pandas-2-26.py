@@ -143,6 +143,7 @@ class Skin(object):
                     position_dict[hero['hero_type2']] = num + 1
 
         graph.json_data = [[self.chart_dict[i], position_dict[i]] for i in position_dict]
+        print(graph.json_data)
         graph.m_pie()
 
     def run(self):
@@ -151,7 +152,7 @@ class Skin(object):
         # 英雄皮肤下载
         # self.hero_skin(hero_list)
         # 英雄皮肤个数云图
-        self.hero_skin_cloud(hero_list)
+        # self.hero_skin_cloud(hero_list)
         # 英雄定位分布图
         self.hero_position_pie(hero_list)
 

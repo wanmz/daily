@@ -22,6 +22,31 @@ import numpy as np
 
 from collect_ip import ua_list
 from snownlp import SnowNLP
+from pyecharts import options as opts
+from pyecharts.charts import WordCloud, Pie
+
+
+class Graph(object):
+    def __init__(self):
+        self.json_data = []
+
+    def m_cloud(self):
+        cloud = (
+            WordCloud(init_opts=opts.InitOpts(theme='essos'))
+            .add("英雄皮肤个数", self.json_data)
+            .set_global_opts(title_opts=opts.TitleOpts(title="英雄皮肤个数分布"))
+        )
+        cloud.render("王者荣耀英雄皮肤个数.html")
+
+    def m_pie(self):
+        p = (
+            Pie(init_opts=opts.InitOpts(theme='essos'))
+            .add("4631348612695678", self.json_data)
+            .set_colors(["blue", "green", "yellow", "red", "pink", "orange", "purple"])
+            .set_series_opts(label_opts=opts.LabelOpts(formatter="{b}: {c}"))
+            .set_global_opts(title_opts=opts.TitleOpts(title="4631348612695678"))
+        )
+        p.render("4631348612695678特斯拉维权女主称为自保谎称怀孕.html")
 
 
 def connect_db():
@@ -65,7 +90,7 @@ def read_comment():
     sina_li = []
     comment_li = []
     user_li = []
-    sql_select = "SELECT * FROM sina_comment"
+    sql_select = "SELECT * FROM sina_comment_4631348612695678"
     params = '1000'
     result = execute_select(sql_select)
     print(result)
@@ -84,17 +109,43 @@ def read_comment():
                 comment_li.append(comment)
     return sina_li, comment_li, user_li
 
+# def snownlp(comment):
+#     print('自然语言处理NLP...snow_analysis')
+#     sentimentslist = []
+#     for li in comment:
+#         s = SnowNLP(li)
+#         print(li, s.sentiments)
+#         sentimentslist.append(s.sentiments)
+#     fig1 = plt.figure("sentiment")
+#     plt.hist(sentimentslist, bins=np.arange(0, 1, 0.02))
+#     plt.show()
+
 
 def snownlp(comment):
     print('自然语言处理NLP...snow_analysis')
-    sentimentslist = []
+    zhongli_num = 0
+    xiaoji_num = 0
+    jiji_num = 0
     for li in comment:
         s = SnowNLP(li)
         print(li, s.sentiments)
-        sentimentslist.append(s.sentiments)
-    fig1 = plt.figure("sentiment")
-    plt.hist(sentimentslist, bins=np.arange(0, 1, 0.02))
-    plt.show()
+        if s.sentiments > 0.54:
+            jiji_num += 1
+        elif 0.46 < s.sentiments:
+            xiaoji_num += 1
+        else:
+            zhongli_num += 1
+    total = xiaoji_num + jiji_num + zhongli_num
+
+    print(jiji_num, zhongli_num, xiaoji_num)
+    # data.append(["积极", jiji_num], ["中立", zhongli_num], ["消极", xiaoji_num])
+    gp = Graph()
+    # 数组合并
+    gp.json_data = np.vstack((["积极", format(float(jiji_num)/float(total), '.2f')],
+               ["中立", format(float(zhongli_num)/float(total), '.2f')],
+               ["消极", format(float(xiaoji_num)/float(total), '.2f')]))
+    # print(gp.json_data)
+    gp.m_pie()
 
 
 def sina(ips):
@@ -102,7 +153,7 @@ def sina(ips):
     # 返回一个随机IP
     ip = random.choice(ips)
     # 指定微博推文
-    uid = '4630009530815212'
+    uid = '4630019865840370'
     # url = 'https://m.weibo.cn/single/rcList?format=cards&id=' + uid + '&type=comment&hot=0&page={}'
     url = "https://m.weibo.cn/single/rcList"
     i = 100
@@ -110,7 +161,7 @@ def sina(ips):
     # try:
     # for i in range(i+1, 67000):
     # for i in range(i+1, i+10): debug测试
-    for i in range(i+1, 600):
+    for i in range(2, 100):
         ip = random.choice(ips)
         proxies = {
             'http': ip
@@ -206,10 +257,10 @@ def main():
            '202.108.22.5', '88.198.24.108', '220.181.111.37', '189.206.105.163', '41.59.90.92',
            '3.211.65.185', '3.219.153.200', '191.96.42.80']
            """
-    sina(ips)
+    # sina(ips)
     # 情感分析
-    # sina_list, comment_list, user_list = read_comment()
-    # snownlp(comment_list)
+    sina_list, comment_list, user_list = read_comment()
+    snownlp(comment_list)
 
 
 if __name__ == '__main__':
