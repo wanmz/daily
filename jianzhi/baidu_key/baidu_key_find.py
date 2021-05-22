@@ -21,6 +21,9 @@ from urllib import parse
 import tkinter as tk
 from tkinter import messagebox
 
+import xlrd
+from xlutils.copy import copy
+
 
 UA = ['Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.55.3 (KHTML, like Gecko) Version/5.1.5 Safari/534.55.3',
       'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; TencentTraveler 4.0;\
@@ -93,6 +96,31 @@ def print_book_lists_excel(book_lists, sheet_name):
     workbook.save(filename)
 
 
+def write_excel_xls(path, sheet_name, value):
+    index = 1  # 获取需要写入数据的行数
+    workbook = xlwt.Workbook()  # 新建一个工作簿
+    sheet = workbook.add_sheet(sheet_name)  # 在工作簿中新建一个表格
+    for i in range(0, index):
+        for j in range(0, len(value[i])):
+            sheet.write(i, j, value[i][j])  # 像表格中写入数据（对应的行和列）
+    workbook.save(path)  # 保存工作簿
+    print("xls格式表格初始化数据成功！")
+
+
+def write_excel_xls_append(path, value):
+    index = 1  # 获取需要写入数据的行数
+    workbook = xlrd.open_workbook(path)  # 打开工作簿
+    sheets = workbook.sheet_names()  # 获取工作簿中的所有表格
+    worksheet = workbook.sheet_by_name(sheets[0])  # 获取工作簿中所有表格中的的第一个表格
+    rows_old = worksheet.nrows  # 获取表格中已存在的数据的行数
+    new_workbook = copy(workbook)  # 将xlrd对象拷贝转化为xlwt对象
+    new_worksheet = new_workbook.get_sheet(0)  # 获取转化后工作簿中的第一个表格
+    for i in range(0, index):
+        for j in range(0, len(value[i])):
+            new_worksheet.write(i + rows_old, j, value[i][j])  # 追加写入数据，注意是从i+rows_old行开始写入
+    new_workbook.save(path)  # 保存工作簿
+
+
 class GUI:
     def __init__(self, master):
         self.master = master
@@ -132,7 +160,12 @@ class GUI:
 
         # 判空操作：略
         print("关键词: %s, 条数: %s, 选择项: %s" % (password, str(int(num)*10), words))
-        res_data.append(['标题', '网址', '邮箱'])
+        try:
+            write_excel_xls("%s.xls" % password, password, [['标题', '网址', '邮箱']])
+        except:
+            print("初始化表格Error")
+            return
+        # res_data.append(['标题', '网址', '邮箱'])
         # page = 1
         if len(password) < 1 or len(num) < 1:
             tk.messagebox.showerror('Error', "请输入关键词")
@@ -150,11 +183,18 @@ class GUI:
             # 测试
             # url = "https://www.baidu.com/s?ie=utf-8&mod=1&isbd=1&isid=BEF5B21C8F360107&ie=utf-8&f=8&rsv_bp=1&rsv_idx=2&tn=baiduhome_pg&wd=%E5%9C%A8%E7%BA%BF%E8%A7%82%E7%9C%8B&rsv_spt=1&oq=%25E5%259C%25A8%25E7%25BA%25BF%25E8%25A7%2582%25E7%259C%258B&rsv_pq=a806fce900131b2a&rsv_t=0987aRlwHz8UpcepFFOEKrH0ZlEoibTZ8WO3%2BeMRQHIF5vMoJ5q7TN%2FeW0NkhUObgR2V&rqlang=cn&rsv_enter=0&rsv_dl=tb&rsv_btype=t&bs=%E5%9C%A8%E7%BA%BF%E8%A7%82%E7%9C%8B&rsv_sid=undefined&_ss=1&clist=&hsug=&f4s=1&csor=0&_cr1=33627"
             cookie = "BIDUPSID=BCD0B94E9998FE24710B8204F8BC4C43; PSTM=1602896500; BD_UPN=12314753; BDUSS=3VtamJ5T1hNWlNYam5ObC1-T0tTWk51Z01lNml3S1VINS1HTXUtemtiRjJhRmxnSVFBQUFBJCQAAAAAAAAAAAEAAABzSTMVbWluZ3pob25nMDEyMzQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHbbMWB22zFgd; BDUSS_BFESS=3VtamJ5T1hNWlNYam5ObC1-T0tTWk51Z01lNml3S1VINS1HTXUtemtiRjJhRmxnSVFBQUFBJCQAAAAAAAAAAAEAAABzSTMVbWluZ3pob25nMDEyMzQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHbbMWB22zFgd; MCITY=-:; __yjs_duid=1_eb6b424c44a6d8fa791ade34ea4993181620214096257; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; BAIDUID=BEF5B2B7397E634C6D14E92405D1C8F3:FG=1; H_PS_PSSID=33801_33967_31660_34004_33676_33607_33909_26350; BDSFRCVID=laKOJeC62m0UgAjeCRKXdFAdrZGrtPJTH6aoVKvBtVxiBxoW3RhuEG0Psx8g0KubRVd0ogKK0mOTHUkF_2uxOjjg8UtVJeC6EG0Ptf8g0f5; H_BDCLCKID_SF=tbuJ_D--tDK3J-ndbjK_2bk-hpoBaC62aKDs_-ncBhcqEIL4etJ-3-_XbtbNaT5b3e6bQq0-LR5RhUbSj4Qo5P_V3PKjyMnXMDr7VIOPyp5nhMJO3j7JDMP0-4bOtqJy523ion6vQpnljpQ3DRoWXPIqbN7P-p5Z5mAqKl0MLPbtbb0xb6_0DTjBjHuftTKsMDJaXCP8MncSJ-0kh4oMeP015-nZKxtqtjIj2hbVKJ5TVRnkbMjNbbDDQND85ljnWncKWMJc2K5zsU3EQfoDMRLPLJr405OTB5-O0KJcbRoSSqTvhPJvyT8DXnO7L4nlXbrtXp7_2J0WStbKy4oTjxL1Db3JKjvMtIFtVD8-JDKBMI-Cen6S-Rcbql7B2nvfHDo-LIv82qbcOR5Jj65hDM4vDHj-3hj3KKnl5Rb-aRTVOMoF3MA--t4QKnQ0at5uKa6w2bcaWljZsq0x0MnWe-bQypoa2pQAaKOMahkMal7xOM5cQlPK5JkgMx6MqpQJQeQ-5KQN3KJmfbL9bT3tjjTyDGtjtTDJfn38L5ryMPTofJcYq4bohjPT5-r9BtQmJJuq-pQgK4QqEUooqtOPLt0Xhfrvb4naQg-q3R7CWn5JsDok-U6RhpbL3HtO0x-jLT7OVn0MW-5DDh3yM-nJyUnQhtnnBpQW3H8HL4nv2JcJbM5m3x6qLTKkQN3T-PKO5bRh_CFbtKtWhCtRejRbMt6H-pJW--QX5ICX3b7EfbRHOp7_bf--D4rQ3fJCatQmLe3v0pQp5PoAsPom0M6xy5K_hnji-fjJQjb05tnOQKOCj-5HQT3mKnvbbN3i-4jNQDPjWb3cWKJV8UbS3tRPBTD02-nBat-OQ6npaJ5nJq5nhMJmb67JD-50exbH55uttnAjoMK; BDSFRCVID_BFESS=laKOJeC62m0UgAjeCRKXdFAdrZGrtPJTH6aoVKvBtVxiBxoW3RhuEG0Psx8g0KubRVd0ogKK0mOTHUkF_2uxOjjg8UtVJeC6EG0Ptf8g0f5; H_BDCLCKID_SF_BFESS=tbuJ_D--tDK3J-ndbjK_2bk-hpoBaC62aKDs_-ncBhcqEIL4etJ-3-_XbtbNaT5b3e6bQq0-LR5RhUbSj4Qo5P_V3PKjyMnXMDr7VIOPyp5nhMJO3j7JDMP0-4bOtqJy523ion6vQpnljpQ3DRoWXPIqbN7P-p5Z5mAqKl0MLPbtbb0xb6_0DTjBjHuftTKsMDJaXCP8MncSJ-0kh4oMeP015-nZKxtqtjIj2hbVKJ5TVRnkbMjNbbDDQND85ljnWncKWMJc2K5zsU3EQfoDMRLPLJr405OTB5-O0KJcbRoSSqTvhPJvyT8DXnO7L4nlXbrtXp7_2J0WStbKy4oTjxL1Db3JKjvMtIFtVD8-JDKBMI-Cen6S-Rcbql7B2nvfHDo-LIv82qbcOR5Jj65hDM4vDHj-3hj3KKnl5Rb-aRTVOMoF3MA--t4QKnQ0at5uKa6w2bcaWljZsq0x0MnWe-bQypoa2pQAaKOMahkMal7xOM5cQlPK5JkgMx6MqpQJQeQ-5KQN3KJmfbL9bT3tjjTyDGtjtTDJfn38L5ryMPTofJcYq4bohjPT5-r9BtQmJJuq-pQgK4QqEUooqtOPLt0Xhfrvb4naQg-q3R7CWn5JsDok-U6RhpbL3HtO0x-jLT7OVn0MW-5DDh3yM-nJyUnQhtnnBpQW3H8HL4nv2JcJbM5m3x6qLTKkQN3T-PKO5bRh_CFbtKtWhCtRejRbMt6H-pJW--QX5ICX3b7EfbRHOp7_bf--D4rQ3fJCatQmLe3v0pQp5PoAsPom0M6xy5K_hnji-fjJQjb05tnOQKOCj-5HQT3mKnvbbN3i-4jNQDPjWb3cWKJV8UbS3tRPBTD02-nBat-OQ6npaJ5nJq5nhMJmb67JD-50exbH55uttnAjoMK; ab_sr=1.0.0_YTQyZjZlMzY4YmE4MDk0NTZiZGEwMDI3ZTVjNjI5Y2ZmODJiNWZmMWYyNjc5NTQwNDEyMGU3MTIzNDhiN2FmMWEzMDA5N2FkN2QzODJiNjdhMDJiMmRlODE5OWYyYzYx; H_PS_645EC=0987aRlwHz8UpcepFFOEKrH0ZlEoibTZ8WO3+eMRQHIF5vMoJ5q7TN/eW0NkhUObgR2V; WWW_ST=1621254353022"
-            res = requests.get(url, headers={'User-Agent': UA[random.randint(0, len(UA) - 1)], 'cookie':cookie}).text
+            ips = ["159.203.61.169", "05.252.161.48", "78.47.16.54", "51.91.157.66", "191.96.42.80",
+                   "113.100.209.146", "45.64.22.24", "120.199.210.18", "005.252.161.48", "5.252.161.48",
+                   "75.119.144.28", "3.221.105.1", "176.9.119.170"]
+            ip = random.choice(ips)
+            proxies = {
+                'http': ip
+            }
+            res = requests.get(url, headers={'User-Agent': UA[random.randint(0, len(UA) - 1)], 'cookie':cookie}, proxies=proxies, timeout=5).text
             i_soup = BeautifulSoup(res, "html.parser")
             div_list = i_soup.findAll('div', class_='c-tools c-gap-left')
             for line in div_list:
-                time.sleep(5)
+                time.sleep(random.randint(2, 5))
                 data_tools = json.loads(line.get("data-tools"))
                 title = data_tools["title"]
                 line_url = data_tools["url"]
@@ -162,7 +202,7 @@ class GUI:
                 # line_url = "http://www.mafengwo.cn/travel-news/220037.html"
                 # print("抓取开始,实际请求Url:{0}, 标题:{1}".format(title, line_url))
                 try:
-                    res = requests.get(line_url, headers={'User-Agent': UA[random.randint(0, len(UA) - 1)]})
+                    res = requests.get(line_url, headers={'User-Agent': UA[random.randint(0, len(UA) - 1)]}, timeout=5)
                     # 增加重连次数
                     s = requests.session()
                     # 关闭多余连接
@@ -176,12 +216,13 @@ class GUI:
                         res = requests.get(line_url, headers={'User-Agent': UA[random.randint(0, len(UA) - 1)]})
                 except requests.exceptions.ConnectionError:
                     res.status_code = "Connection refused"
+                except:
+                    continue
                 if res.status_code != 200:
                     print("[%s]网站不可达, 跳过" % line_url)
                     continue
                 res.encoding = 'utf8'
-                # print(line_url)
-                # print(res.text)
+                # print(line_url)                # print(res.text)
                 try:
                     # 正则表达式匹配邮箱
                     # mail = re.findall(r'[a-z_\-\.0-9]+@[a-z\-\.]+', res.text, re.DOTALL)
@@ -215,14 +256,15 @@ class GUI:
                     continue
                 if len(mail) < 1:
                     continue
+                write_excel_xls_append("%s.xls" % password, [[title, line_url, ','.join(set(mail))]])
                 # print(mail)
-                res_data.append([title, line_url, ','.join(set(mail))])
+                # res_data.append([title, line_url, ','.join(set(mail))])
                 print("获取第%s数据完成！！！" % cnt)
                 cnt += 1
             # print(res_data)
             # debug测试
             # res_data = [['电影在线观看,电影免费下载,最新电视剧免费收看_唯美影视', 'http://www.baidu.com/link?url=eyoO4EhWzZ47TLmA2SYC5d_fAH4mDlPDrZ2Fts4D5fe', [], 200], ['胡巴鹿电影网-好看的电影电视剧免费在线观看-2020豆瓣高分电影推荐', 'http://www.baidu.com/link?url=VAPhmsYRjWks69QWGjRuDiOpoToy-w3FCx10bJZsrfy', ['huizisa@gmail.com'], 200], ['小马电影网-免费电影在线观看-好看的电视剧大全推荐', 'http://www.baidu.com/link?url=OP8Rwz5p6WqYtpromBGWEkgaPF0hf58vnSXVHTyPaDi', [], 200], ['恐怖影院-恐怖,僵尸,鬼片,手机电影在线观看', 'http://www.baidu.com/link?url=m5DoSDtYy3f4gQKvB_jSx_cUjlTek0TNwOCZjDM8I5zKTK6sU_d3pXGgDjSNRXRQ', [], 200], ['日剧网-最新韩剧,日剧,泰剧在线观看,热播韩剧网,韩剧TV网', 'http://www.baidu.com/link?url=neNj7OKE8KziY-M27Nnt4vplO3QcUf_GRTykqoowjeW', [], 200], ['【电视剧大全】_2021更新更好看的电视剧在线观看-2345电视剧', 'http://www.baidu.com/link?url=nGXBOzu5-d8WSSQmhyG5bGAo3uhFmXDRRz9wokI_dnW', [], 200], ['二三四五【影视大全】_2021影视大全在线观看', 'http://www.baidu.com/link?url=P3RqBZYRQK1ufC2urUCdjonPCwAvOOrVIsiEaiPnIUS', [], 200], ['电影网_1905.com', 'http://www.baidu.com/link?url=mvE1F6b2h-mUS6A2nVwnRvg8UFImasuGHFwUbZpl367', [], 200]]
-        print_book_lists_excel(res_data, password)
+        # print_book_lists_excel(res_data, password)
         tk.messagebox.showinfo('Info', "下载完成！")
 
 

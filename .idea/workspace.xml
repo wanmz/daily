@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b9fde64-71fb-4a22-ac41-121d98390554" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jianzhi/baidu_key/baidu_key_find_bak2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/baidu_key_find.py" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/baidu_key_find.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/Analysis-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/EXE-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/PKG-00.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/PKG-00.pkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/PKG-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/PYZ-00.pyz" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/PYZ-00.pyz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/PYZ-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/PYZ-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/warn-baidu_key_find.txt" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/build/baidu_key_find/warn-baidu_key_find.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/baidu_key/dist/baidu_key_find.exe" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/baidu_key/dist/baidu_key_find.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianzhi/weibo/weibo.py" beforeDir="false" afterPath="$PROJECT_DIR$/jianzhi/weibo/weibo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandas-analysis/pandas-2-26.py" beforeDir="false" afterPath="$PROJECT_DIR$/pandas-analysis/pandas-2-26.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandas-analysis/英雄定位个数分布.html" beforeDir="false" afterPath="$PROJECT_DIR$/pandas-analysis/英雄定位个数分布.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +42,7 @@
     <SUITE FILE_PATH="coverage/daily$eg1.coverage" NAME="eg1 Coverage Results" MODIFIED="1613819663684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python3-100" />
     <SUITE FILE_PATH="coverage/daily$Valid_Parentheses.coverage" NAME="Valid_Parentheses Coverage Results" MODIFIED="1614172881719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/simple" />
     <SUITE FILE_PATH="coverage/daily$pandas_2_25.coverage" NAME="pandas-2-25 Coverage Results" MODIFIED="1614266658856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis" />
-    <SUITE FILE_PATH="coverage/daily$baidu_key_find.coverage" NAME="baidu_key_find Coverage Results" MODIFIED="1621523282107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jianzhi/baidu_key" />
+    <SUITE FILE_PATH="coverage/daily$baidu_key_find.coverage" NAME="baidu_key_find Coverage Results" MODIFIED="1621652568410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jianzhi/baidu_key" />
     <SUITE FILE_PATH="coverage/daily$simple_bar.coverage" NAME="simple_bar Coverage Results" MODIFIED="1614003609683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data-analysis/simple" />
     <SUITE FILE_PATH="coverage/daily$yiqing_cloud.coverage" NAME="yiqing-cloud Coverage Results" MODIFIED="1614269729358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis/yiqing-my" />
     <SUITE FILE_PATH="coverage/daily$get_boss_job_data.coverage" NAME="get_boss_job_data Coverage Results" MODIFIED="1614093177582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data-analysis/boss_job" />
@@ -70,24 +58,12 @@
     <SUITE FILE_PATH="coverage/daily$yiqing_line.coverage" NAME="yiqing-line Coverage Results" MODIFIED="1614269737029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas-analysis/yiqing-my" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jianzhi/weibo/weibo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-179">
-              <caret line="128" column="22" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
-              <folding>
-                <element signature="e#353#362#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jianzhi/baidu_key/baidu_key_find.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="195" column="72" lean-forward="true" selection-start-line="195" selection-start-column="72" selection-end-line="195" selection-end-column="72" />
+            <state relative-caret-position="-350">
+              <caret line="188" column="35" lean-forward="true" selection-start-line="188" selection-start-column="35" selection-end-line="188" selection-end-column="35" />
               <folding>
                 <element signature="e#302#311#0" expanded="true" />
               </folding>
@@ -96,9 +72,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jianzhi/baidu_key/baidu_key_find_bak2.py">
+        <entry file="file://$PROJECT_DIR$/jianzhi/weibo/weibo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1254" />
+            <state relative-caret-position="171">
+              <caret line="250" selection-start-line="250" selection-end-line="252" selection-end-column="59" />
+              <folding>
+                <element signature="e#353#362#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -155,6 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,13 +166,18 @@
               <item name="daily" type="b2602c69:ProjectViewProjectNode" />
               <item name="daily" type="462c0819:PsiDirectoryNode" />
               <item name="jianzhi" type="462c0819:PsiDirectoryNode" />
+              <item name="sina_comment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="daily" type="b2602c69:ProjectViewProjectNode" />
+              <item name="daily" type="462c0819:PsiDirectoryNode" />
+              <item name="jianzhi" type="462c0819:PsiDirectoryNode" />
               <item name="weibo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -354,22 +341,23 @@
       <workItem from="1621310112809" duration="2751000" />
       <workItem from="1621342389482" duration="9961000" />
       <workItem from="1621429407936" duration="12565000" />
-      <workItem from="1621515325978" duration="8276000" />
+      <workItem from="1621515325978" duration="9362000" />
+      <workItem from="1621644077870" duration="3997000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36101000" />
+    <option name="totallyTimeSpent" value="41184000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2627346" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2660858" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3555241" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3555241" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -378,8 +366,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32719547" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32673267" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -521,16 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jianzhi/sina_comment/weibo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#82#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jianzhi/sina_comment/comment_nlp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1615">
@@ -563,56 +541,16 @@
         <state relative-caret-position="-1053" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/英雄定位个数分布.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4630019865840370.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="103" lean-forward="true" selection-start-line="5" selection-start-column="103" selection-end-line="5" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/特斯拉车顶维权女车主发声.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4630019865840370特斯拉车顶维权女车主发声.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4630379183476031过去几日，我们让所有特斯拉车.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4634002780851191维权女车主丈夫回应起诉特斯拉副总裁.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4628860774122908故发生前一分钟究竟发生了什么.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4628199978046978尊敬的各位客户、网友和媒体朋友们.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4627973468065173新华社评特斯拉高管傲慢回应.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4627963633205346上海车展爬上车顶女子被行拘.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/英雄定位个数分布.html" />
+    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4630019865840370.html" />
+    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/特斯拉车顶维权女车主发声.html" />
+    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4630019865840370特斯拉车顶维权女车主发声.html" />
+    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4630379183476031过去几日，我们让所有特斯拉车.html" />
+    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4634002780851191维权女车主丈夫回应起诉特斯拉副总裁.html" />
+    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4628860774122908故发生前一分钟究竟发生了什么.html" />
+    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4628199978046978尊敬的各位客户、网友和媒体朋友们.html" />
+    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4627973468065173新华社评特斯拉高管傲慢回应.html" />
+    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4627963633205346上海车展爬上车顶女子被行拘.html" />
     <entry file="file://$PROJECT_DIR$/pandas-analysis/pandas-2-26.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -628,27 +566,22 @@
         <state relative-caret-position="-1254" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4631348612695678特斯拉维权女主称为自保谎称怀孕.html">
+    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4631348612695678特斯拉维权女主称为自保谎称怀孕.html" />
+    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4627743041390496特斯拉中国副总裁回应车展维权事件.html" />
+    <entry file="file://$PROJECT_DIR$/jianzhi/sina_comment/weibo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+        <state relative-caret-position="-931">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#82#91#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jianzhi/weibo/4627743041390496特斯拉中国副总裁回应车展维权事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jianzhi/weibo/weibo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-179">
-          <caret line="128" column="22" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
+        <state relative-caret-position="171">
+          <caret line="250" selection-start-line="250" selection-end-line="252" selection-end-column="59" />
           <folding>
             <element signature="e#353#362#0" expanded="true" />
           </folding>
@@ -657,8 +590,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jianzhi/baidu_key/baidu_key_find.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="195" column="72" lean-forward="true" selection-start-line="195" selection-start-column="72" selection-end-line="195" selection-end-column="72" />
+        <state relative-caret-position="-350">
+          <caret line="188" column="35" lean-forward="true" selection-start-line="188" selection-start-column="35" selection-end-line="188" selection-end-column="35" />
           <folding>
             <element signature="e#302#311#0" expanded="true" />
           </folding>
