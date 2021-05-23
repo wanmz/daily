@@ -104,7 +104,7 @@ def write_excel_xls(path, sheet_name, value):
         for j in range(0, len(value[i])):
             sheet.write(i, j, value[i][j])  # 像表格中写入数据（对应的行和列）
     workbook.save(path)  # 保存工作簿
-    print("xls格式表格初始化数据成功！")
+    print("xls格式表格初始化数据成功1！")
 
 
 def write_excel_xls_append(path, value):
@@ -190,45 +190,65 @@ class GUI:
             proxies = {
                 'http': ip
             }
-            res = requests.get(url, headers={'User-Agent': UA[random.randint(0, len(UA) - 1)], 'cookie':cookie}, proxies=proxies, timeout=5).text
-            i_soup = BeautifulSoup(res, "html.parser")
-            div_list = i_soup.findAll('div', class_='c-tools c-gap-left')
-            for line in div_list:
-                time.sleep(random.randint(2, 5))
-                data_tools = json.loads(line.get("data-tools"))
-                title = data_tools["title"]
-                line_url = data_tools["url"]
-                # 测试地址
-                # line_url = "http://www.mafengwo.cn/travel-news/220037.html"
-                # print("抓取开始,实际请求Url:{0}, 标题:{1}".format(title, line_url))
-                try:
-                    res = requests.get(line_url, headers={'User-Agent': UA[random.randint(0, len(UA) - 1)]}, timeout=5)
-                    # 增加重连次数
-                    s = requests.session()
-                    # 关闭多余连接
-                    s.keep_alive = False
+            try:
+                res = requests.get(url, headers={'User-Agent': UA[random.randint(0, len(UA) - 1)], 'cookie':cookie,
+                                                 'Connection': 'close'}, proxies=proxies, timeout=30).text
+                i_soup = BeautifulSoup(res, "html.parser")
+                div_list = i_soup.findAll('div', class_='c-tools c-gap-left')
+                for line in div_list:
+                    time.sleep(random.randint(2, 5))
+                    data_tools = json.loads(line.get("data-tools"))
+                    title = data_tools["title"]
+                    line_url = data_tools["url"]
+                    # 测试地址
+                    # line_url = "http://www.mafengwo.cn/travel-news/220037.html"
+                    # print("抓取开始,实际请求Url:{0}, 标题:{1}".format(title, line_url))
+                    try:
+                        res = requests.get(line_url, headers={'User-Agent': UA[random.randint(0, len(UA) - 1)], 'Connection': 'close'}, timeout=30)
+                        # 增加重连次数
+                        s = requests.session()
+                        # 关闭多余连接
+                        s.keep_alive = False
 
-                    # 处理网址重定向问题
-                    # print(res.url)
-                    if res.url != line_url:
-                        # print("网址发生重定向")
-                        line_url = res.url
-                        res = requests.get(line_url, headers={'User-Agent': UA[random.randint(0, len(UA) - 1)]})
-                except requests.exceptions.ConnectionError:
-                    res.status_code = "Connection refused"
-                except:
-                    continue
-                if res.status_code != 200:
-                    print("[%s]网站不可达, 跳过" % line_url)
-                    continue
-                res.encoding = 'utf8'
-                # print(line_url)                # print(res.text)
-                try:
-                    # 正则表达式匹配邮箱
-                    # mail = re.findall(r'[a-z_\-\.0-9]+@[a-z\-\.]+', res.text, re.DOTALL)
-                    if len(words) < 1:
-                        mail = re.findall(r'[a-z_\-\.0-9]+@[a-z0-9]+\.[com,cn,net]{1,3}', res.text, re.DOTALL)
-                        if len(mail) < 1:
+                        # 处理网址重定向问题
+                        # print(res.url)
+                        if res.url != line_url:
+                            # print("网址发生重定向")
+                            line_url = res.url
+                            res = requests.get(line_url, headers={'User-Agent': UA[random.randint(0, len(UA) - 1)], 'Connection': 'close'}, timeout=30)
+                            # 增加重连次数
+                            # s = requests.session()
+                            # 关闭多余连接
+                            # s.keep_alive = False
+                    except requests.exceptions.ConnectionError:
+                        # res.status_code = "Connection refused"
+                        continue
+                    except:
+                        continue
+                    if res.status_code != 200:
+                        print("[%s]网站不可达, 跳过" % line_url)
+                        continue
+                    res.encoding = 'utf8'
+                    # print(line_url)                # print(res.text)
+                    try:
+                        # 正则表达式匹配邮箱
+                        # mail = re.findall(r'[a-z_\-\.0-9]+@[a-z\-\.]+', res.text, re.DOTALL)
+                        if len(words) < 1:
+                            mail = re.findall(r'[a-z_\-\.0-9]+@[a-z0-9]+\.[com,cn,net]{1,3}', res.text, re.DOTALL)
+                            if len(mail) < 1:
+                                # 正则表达式匹配座机
+                                tel = []
+                                mail = re.findall(r'[0][0-9]{2,3}-[0-9]{5,10}[\-0-9]{0,5}', res.text)
+                                if len(mail) > 0:
+                                    for i in mail:
+                                        if len(i.split('-')[1].strip()) > 8:
+                                            continue
+                                        else:
+                                            tel.append(i)
+                                    mail = tel
+                        if words == "邮箱":
+                            mail = re.findall(r'[a-z_\-\.0-9]+@[a-z0-9]+\.[com,cn,net]{1,3}', res.text, re.DOTALL)
+                        if words == "座机号":
                             # 正则表达式匹配座机
                             tel = []
                             mail = re.findall(r'[0][0-9]{2,3}-[0-9]{5,10}[\-0-9]{0,5}', res.text)
@@ -239,28 +259,17 @@ class GUI:
                                     else:
                                         tel.append(i)
                                 mail = tel
-                    if words == "邮箱":
-                        mail = re.findall(r'[a-z_\-\.0-9]+@[a-z0-9]+\.[com,cn,net]{1,3}', res.text, re.DOTALL)
-                    if words == "座机号":
-                        # 正则表达式匹配座机
-                        tel = []
-                        mail = re.findall(r'[0][0-9]{2,3}-[0-9]{5,10}[\-0-9]{0,5}', res.text)
-                        if len(mail) > 0:
-                            for i in mail:
-                                if len(i.split('-')[1].strip()) > 8:
-                                    continue
-                                else:
-                                    tel.append(i)
-                            mail = tel
-                except:
-                    continue
-                if len(mail) < 1:
-                    continue
-                write_excel_xls_append("%s.xls" % password, [[title, line_url, ','.join(set(mail))]])
-                # print(mail)
-                # res_data.append([title, line_url, ','.join(set(mail))])
-                print("获取第%s数据完成！！！" % cnt)
-                cnt += 1
+                    except:
+                        continue
+                    if len(mail) < 1:
+                        continue
+                    write_excel_xls_append("%s.xls" % password, [[title, line_url, ','.join(set(mail))]])
+                    # print(mail)
+                    # res_data.append([title, line_url, ','.join(set(mail))])
+                    print("获取第%s数据完成！！！" % cnt)
+                    cnt += 1
+            except:
+                continue
             # print(res_data)
             # debug测试
             # res_data = [['电影在线观看,电影免费下载,最新电视剧免费收看_唯美影视', 'http://www.baidu.com/link?url=eyoO4EhWzZ47TLmA2SYC5d_fAH4mDlPDrZ2Fts4D5fe', [], 200], ['胡巴鹿电影网-好看的电影电视剧免费在线观看-2020豆瓣高分电影推荐', 'http://www.baidu.com/link?url=VAPhmsYRjWks69QWGjRuDiOpoToy-w3FCx10bJZsrfy', ['huizisa@gmail.com'], 200], ['小马电影网-免费电影在线观看-好看的电视剧大全推荐', 'http://www.baidu.com/link?url=OP8Rwz5p6WqYtpromBGWEkgaPF0hf58vnSXVHTyPaDi', [], 200], ['恐怖影院-恐怖,僵尸,鬼片,手机电影在线观看', 'http://www.baidu.com/link?url=m5DoSDtYy3f4gQKvB_jSx_cUjlTek0TNwOCZjDM8I5zKTK6sU_d3pXGgDjSNRXRQ', [], 200], ['日剧网-最新韩剧,日剧,泰剧在线观看,热播韩剧网,韩剧TV网', 'http://www.baidu.com/link?url=neNj7OKE8KziY-M27Nnt4vplO3QcUf_GRTykqoowjeW', [], 200], ['【电视剧大全】_2021更新更好看的电视剧在线观看-2345电视剧', 'http://www.baidu.com/link?url=nGXBOzu5-d8WSSQmhyG5bGAo3uhFmXDRRz9wokI_dnW', [], 200], ['二三四五【影视大全】_2021影视大全在线观看', 'http://www.baidu.com/link?url=P3RqBZYRQK1ufC2urUCdjonPCwAvOOrVIsiEaiPnIUS', [], 200], ['电影网_1905.com', 'http://www.baidu.com/link?url=mvE1F6b2h-mUS6A2nVwnRvg8UFImasuGHFwUbZpl367', [], 200]]
